@@ -21,6 +21,28 @@ body {
   );
 }
 
+.instruction {
+  border: 1px solid #000448;
+  background-color: rgb(208, 229, 255);
+  color: #000448;
+  border-radius: 0.3rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.3rem;
+  font-weight: 300;
+  break-inside: avoid;
+  text-align: justify;
+  overflow-wrap: break-word;
+  hyphens: auto;
+  margin: 1rem;
+  min-width: 10rem;
+  position: relative;
+  padding: 1rem 2rem;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
 .key {
   border: 1px solid #fff;
   background-color: #000448;
@@ -32,6 +54,10 @@ body {
   justify-content: center;
   font-size: 1.3rem;
   font-weight: 300;
+  break-inside: avoid;
+  text-align: justify;
+  overflow-wrap: break-word;
+  hyphens: auto;
   margin: 1rem;
   width: 10rem;
   height: 10rem;
@@ -46,7 +72,10 @@ body {
   border: 1px solid #000448;
   background-color: rgb(208, 229, 255);
   color: #000448;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.4));
+  box-shadow: inset 0px 0 14px rgba(0, 115, 230, 0.3),
+    inset 0px 0 18px rgba(0, 115, 230, 0.3),
+    inset 0px 0 20px rgba(0, 115, 230, 0.3);
   transition: all 0.2s ease-out;
 }
 
