@@ -22,28 +22,54 @@ body {
 }
 
 .key {
-  border: 1px solid #999;
-  background-color: #eee;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  border-radius: 0.3rem;
+  border: 1px solid #fff;
+  background-color: #000448;
+  color: rgb(208, 229, 255);
+  border-radius: 50%;
   display: inline-flex;
+  flex-direction: column;
   align-items: center;
+  justify-content: center;
   font-size: 1.3rem;
   font-weight: 300;
-  padding: 20px;
-  flex-direction: column;
   margin: 1rem;
-  min-width: 10rem;
+  width: 10rem;
+  height: 10rem;
   position: relative;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: all 0.4s ease-in;
+}
+.key:hover {
+  position: relative;
+  transform: scale(1.1);
+  border: 1px solid #000448;
+  background-color: rgb(208, 229, 255);
+  color: #000448;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  transition: all 0.2s ease-out;
+}
+
+.key:hover small {
+  top: 11rem;
+  transition: all 0.2s ease-out;
 }
 
 .key small {
   position: absolute;
-  top: -1.6rem;
-  left: 0;
+  top: -3rem;
+  left: 50;
   text-align: center;
-  width: 100%;
-  color: #555;
+  width: fit-content;
+  border: 1px solid #fff;
+  background-color: #000448;
+  color: rgb(208, 229, 255);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 3rem;
+  /* display: inline-flex; */
+  align-items: center;
+  padding: 0.3rem 0.6rem 0.6rem;
   font-size: 1rem;
   font-weight: 400;
+  transition: all 0.4s ease-in;
 }
